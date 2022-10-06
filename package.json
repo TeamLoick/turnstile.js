@@ -1,8 +1,9 @@
 {
-  "name": "turnstile.js",
-  "version": "1.0.0",
+  "name": "@teamloick/turnstile.js",
+  "version": "1.0.1",
   "description": "An easy integration to validate turnstile captchas",
   "main": "dist/index.js",
+  "private": false,
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\""
