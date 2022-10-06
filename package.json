@@ -1,0 +1,36 @@
+{
+  "name": "turnstile.js",
+  "version": "1.0.0",
+  "description": "An easy integration to validate turnstile captchas",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamLoick/turnstile.js.git"
+  },
+  "keywords": [
+    "captcha",
+    "cloudflare",
+    "turnstile",
+    "turnstile.js",
+    "validator"
+  ],
+  "author": "TeamLoick",
+  "license": "Apache-2.0 license",
+  "bugs": {
+    "url": "https://github.com/TeamLoick/turnstile.js/issues"
+  },
+  "homepage": "https://github.com/TeamLoick/turnstile.js#readme",
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}
