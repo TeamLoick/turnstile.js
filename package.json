@@ -1,7 +1,7 @@
 {
   "name": "@teamloick/turnstile.js",
-  "version": "1.0.4",
-  "description": "An easy integration to validate turnstile captchas",
+  "version": "1.0.5",
+  "description": "An easy integration to validate Cloudflare Turnstile captchas",
   "main": "dist/index.js",
   "private": false,
   "scripts": {
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/TeamLoick/turnstile.js#readme",
   "dependencies": {
-    "form-data": "^4.0.0",
     "node-fetch": "^2.6.7"
   },
   "devDependencies": {
