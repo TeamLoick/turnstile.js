@@ -1,6 +1,6 @@
 {
   "name": "@teamloick/turnstile.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An easy integration to validate turnstile captchas",
   "main": "dist/index.js",
   "private": false,

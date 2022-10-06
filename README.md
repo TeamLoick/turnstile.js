@@ -61,3 +61,37 @@ import turnstile from '@teamloick/turnstile.js';
 }*/
 })();
 ```
+
+## Documentation
+
+The validation function takes the following parameters:
+| Parameter | Required/Optional | description |
+|-----------|-------------------|-------------------------------------------------------------------------------------|
+| `secret` | Required | The site’s secret key. |
+| `response` | Required | The response provided by the Turnstile client-side render on your site. (The token) |
+| `remoteip` | Optional | The user’s IP address. |
+
+The validation answer with the following parameters:
+
+In case of a successful validation, the response should be similar to the following:
+
+```json
+{
+  "success": true,
+  "challenge_ts": "2022-02-28T15:14:30.096Z",
+  "hostname": "example.com",
+  "error-codes": [],
+  "action": "login",
+  "cdata": "sessionid-123456789"
+}
+```
+
+| Parameter    | description                                                                                                                                                                                                                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| challenge_ts | is the ISO timestamp for the time the challenge was solved.                                                                                                                                                                                                                                  |
+| hostname     | is the hostname for which the challenge was served.                                                                                                                                                                                                                                          |
+| error-codes  | is a list of errors that occurred.                                                                                                                                                                                                                                                           |
+| action       | is the customer widget identifier passed to the widget on the client side. This is used to differentiate widgets using the same sitekey in analytics. Its integrity is protected by modifications from an attacker. It is recommended to validate that the action matches an expected value. |
+| cdata        | is the customer data passed to the widget on the client side. This can be used by the customer to convey state. It is integrity protected by modifications from an attacker.                                                                                                                 |
+
+In case of a validation failure, the function will throw an error.
