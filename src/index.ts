@@ -23,6 +23,7 @@ async function validate(secret: string, token: string, ip?: string) {
     action?: string;
     cdata?: string;
   } = await res.json();
+  /* Error descriptions */
   var error = data['error-codes'][0];
   if (error) {
     switch (error) {

@@ -28,7 +28,7 @@ npm i @teamloick/turnstile.js
 const turnstile = require('@teamloick/turnstile.js');
 
 (async () => {
-  var secret = ' your secret key';
+  var secret = '1x0000000000000000000000000000000AA'; // your secret key
   var token = 'the token that the captcha gives';
   var res = await turnstile(secret, token);
   console.log(res); /* {
@@ -48,7 +48,7 @@ const turnstile = require('@teamloick/turnstile.js');
 import turnstile from '@teamloick/turnstile.js';
 
 (async () => {
-  var secret = ' your secret key';
+  var secret = '1x0000000000000000000000000000000AA'; // your secret key
   var token = 'the token that the captcha gives';
   var res = await turnstile(secret, token);
   console.log(res); /* {
@@ -95,3 +95,10 @@ In case of a successful validation, the response should be similar to the follow
 | cdata        | is the customer data passed to the widget on the client side. This can be used by the customer to convey state. It is integrity protected by modifications from an attacker.                                                                                                                 |
 
 In case of a validation failure, the function will throw an error.
+
+## To do
+
+| Status    | Task                               |
+| --------- | ---------------------------------- |
+| Completed | Add full validation support        |
+| Doing     | Add client side support with react |
