@@ -10,8 +10,9 @@
   </p>
 </div>
 
-An easy integration for <a target="_blank" href="https://www.cloudflare.com/products/turnstile/?utm_source=loick">Cloudflare Turnstile captchas</a>
-all credits of the integration for react for <a href="https://www.npmjs.com/package/react-turnstile" target="_blank">react-turnstile</a> made by Le0developer.
+An easy integration for <a target="_blank" href="https://www.cloudflare.com/products/turnstile/?utm_source=loick">Cloudflare Turnstile Captcha.</a>
+
+All credits of the integration for react for <a href="https://www.npmjs.com/package/react-turnstile" target="_blank">react-turnstile</a> made by Le0developer.
 
 ## Installation
 
