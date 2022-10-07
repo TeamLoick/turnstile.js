@@ -27,6 +27,3 @@ jobs:
 
       - name: Type check
         run: npm run build
-     - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
