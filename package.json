@@ -1,7 +1,7 @@
 {
   "name": "@teamloick/turnstile.js",
-  "version": "1.0.5",
-  "description": "An easy integration to validate Cloudflare Turnstile captchas",
+  "version": "1.0.6-beta.0",
+  "description": "An easy integration for Cloudflare Turnstile captchas",
   "main": "dist/index.js",
   "private": false,
   "scripts": {
@@ -17,7 +17,10 @@
     "cloudflare",
     "turnstile",
     "turnstile.js",
-    "validator"
+    "validator",
+    "react",
+    "nextjs",
+    "next"
   ],
   "author": "TeamLoick",
   "license": "Apache-2.0 license",
@@ -26,7 +29,9 @@
   },
   "homepage": "https://github.com/TeamLoick/turnstile.js#readme",
   "dependencies": {
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.8.2",
