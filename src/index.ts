@@ -28,25 +28,45 @@ async function validate(secret: string, token: string, ip?: string) {
   if (error) {
     switch (error) {
       case 'missing-input-secret':
-        throw new Error('The secret parameter was not passed.');
+        return {
+          errorDescription: 'The secret parameter was not passed.',
+          ...data,
+        };
       case 'invalid-input-secret':
-        throw new Error('The secret parameter was invalid or did not exist.');
+        return {
+          errorDescription:
+            'The secret parameter was invalid or did not exist.',
+          ...data,
+        };
       case 'missing-input-response':
-        throw new Error('The response(token) parameter was not passed.');
+        return {
+          errorDescription: 'The response(token) parameter was not passed.',
+          ...data,
+        };
       case 'invalid-input-response':
-        throw new Error(
-          'The response(token) parameter is invalid or has expired.',
-        );
+        return {
+          errorDescription:
+            'The response(token) parameter is invalid or has expired.',
+          ...data,
+        };
       case 'bad-request':
-        throw new Error('	The request was rejected because it was malformed.');
+        return {
+          errorDescription:
+            'The request was rejected because it was malformed.',
+          ...data,
+        };
       case 'timeout-or-duplicate':
-        throw new Error(
-          'The response parameter has already been validated before.',
-        );
+        return {
+          errorDescription:
+            'The response parameter has already been validated before.',
+          ...data,
+        };
       case 'internal-error':
-        throw new Error(
-          'An internal error happened while validating the response. The request can be retried.',
-        );
+        return {
+          errorDescription:
+            'An internal error happened while validating the response. The request can be retried.',
+          ...data,
+        };
     }
   }
   return data;
