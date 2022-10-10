@@ -11,7 +11,18 @@
 </div>
 
 An easy integration for <a target="_blank" href="https://www.cloudflare.com/products/turnstile/?utm_source=loick">Cloudflare Turnstile captchas</a>
-all credits of the integration for react for <a href="https://www.npmjs.com/package/react-turnstile" target="_blank">react-turnstile</a> made by Le0developer.
+
+All credits of the integration for react for <a href="https://www.npmjs.com/package/react-turnstile" target="_blank">react-turnstile</a> made by Le0developer.
+
+## Guide
+
+- <a href="#installation">Installation</a>
+- <a href="#usage">Usage</a>
+  - <a href="#validating-token">Validating token</a>
+  - <a href="#react-component">React component</a>
+- <a href="#documentation">Documentation</a>
+  - <a href="#validating-token-1">Validating token</a>
+  - <a href="#react-component-1">React component</a>
 
 ## Installation
 
