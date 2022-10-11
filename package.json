@@ -1,7 +1,7 @@
 {
   "name": "@teamloick/turnstile.js",
   "version": "1.0.6",
-  "description": "An easy integration for Cloudflare Turnstile captchas",
+  "description": "An easy integration for Cloudflare Turnstile Captcha",
   "main": "dist/index.js",
   "private": false,
   "scripts": {
